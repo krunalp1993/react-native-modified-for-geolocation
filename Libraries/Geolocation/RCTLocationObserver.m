@@ -23,8 +23,9 @@ typedef NS_ENUM(NSInteger, RCTPositionErrorCode) {
   RCTPositionErrorTimeout,
 };
 
-#define RCT_DEFAULT_LOCATION_ACCURACY kCLLocationAccuracyHundredMeters
-
+// #define RCT_DEFAULT_LOCATION_ACCURACY kCLLocationAccuracyHundredMeters
+//#define RCT_DEFAULT_LOCATION_ACCURACY kCLLocationAccuracyBest
+# define RCT_DEFAULT_LOCATION_ACCURACY kCLLocationAccuracyBestForNavigation
 typedef struct {
   BOOL skipPermissionRequests;
 } RCTLocationConfiguration;
